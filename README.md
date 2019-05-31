@@ -1,1 +1,0 @@
-# certificatedatascience.github.io
