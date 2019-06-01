@@ -16,8 +16,11 @@
   
   <script type="text/javascript" src="script.js">  </script>
   <script type="text/javascript">
-    
-      $().ready(function(){
+    $.holdReady( true );
+    $.getScript( "script.js", function() {
+      $.holdReady( false );
+     });
+     $().ready(function(){
            load_footer();
       });
   </script>
