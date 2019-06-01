@@ -11,9 +11,9 @@
   
   <script type="text/javascript">
 $().ready(function(){
-    $.getJSON( "/footer.html", function( data ) {
+    $.getJSON( "https://certificatedatascience.github.io/footer.json", function( data ) {
     console.log(data);
-    $("#text").html(data["text"]);
+    $("#footer").html(data["footer"]);
   });
 });
   </script>
