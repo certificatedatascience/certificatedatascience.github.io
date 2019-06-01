@@ -5,7 +5,7 @@ function load_footer() {
          function( data ) {
             $("#footer").html(data["footer"]);
            // alert("show whatever");
-            $("#sidebar_container").html("whatever");
+            $("#sidebar_container").html( data["whatever"]);
           }
     );
 }
