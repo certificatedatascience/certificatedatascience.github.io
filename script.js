@@ -9,6 +9,3 @@ function load_footer() {
 }
 
 
-$().ready(function(){
-           load_footer();
-});
