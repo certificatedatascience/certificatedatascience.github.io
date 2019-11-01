@@ -113,14 +113,12 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.cs
         <form role="form" method="post" id="reused_form">
             <div class="row">
                 <div class="col-sm-6 form-group">
-                    <label for="name">
-                        First Name:</label>
-                    <input type="text" class="form-control" id="firstname" name="firstname"  maxlength="50">
+                    <label for="name"> Surname:</label>
+                    <input type="text" class="form-control" id="surname" name="surname"  maxlength="50">
                 </div>
                 <div class="col-sm-6 form-group">
-                    <label for="name">
-                        Last Name:</label>
-                    <input type="text" class="form-control" id="lastname" name="lastname"  maxlength="50">
+                    <label for="name"> First Name:</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname"  maxlength="50">
                 </div>
             </div>
           
@@ -140,9 +138,13 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.cs
           
             <div class="row">
                 <div class="col-sm-12 form-group">
+                   <p> 
+Preferred method of contact (email or phone)
+Preferred day and time to be contacted
+                  </p>
                     <label for="name">
                         Message:</label>
-                    <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                    <textarea class="form-control" type="textarea" id="message" name="preferred_contacting_method" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
                 </div>
             </div>
            
@@ -150,7 +152,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.cs
              <div class="row">
                 <div class="col-sm-6 form-group">
                     <label for="email">Occupation:</label>
-                    <input type="text" class="form-control" id="occupation" name="info"
+                    <input type="text" class="form-control" id="occupation" name="occupation"
                     maxlength="50">
                 </div>
             </div>
@@ -159,12 +161,12 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.cs
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label for="email"> Number of years:</label>
-                    <input type="text" class="form-control" id="noyears" name="info"
+                    <input type="text" class="form-control" id="noyears" name="noyears"
                     maxlength="50">
                 </div>
                 <div class="col-sm-6 form-group">
                     <label for="email">  Sector:</label>
-                    <input type="tel" class="form-control" id="sector" name="info" 
+                    <input type="tel" class="form-control" id="sector" name="sector" 
                     maxlength="50">
                 </div>
             </div>
@@ -172,7 +174,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.cs
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <label for="name"> Brief description of duties:</label>
-                    <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Briefly describe your duty especially related to computers and data" maxlength="6000" rows="7"></textarea>
+                    <textarea class="form-control" type="textarea" id="message" name="duty_description" placeholder="Briefly describe your duty especially related to computers and data" maxlength="6000" rows="7"></textarea>
                 </div>
             </div>
           
@@ -198,7 +200,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.cs
             <p> Please check the boxes for the skill you have some level of familiarity. Note that we do not expect you
               to have all of these topics and this is simply to determine whether you have some familiarity with some programming language and mathematics.
              <br> <b>Programming Languages: </b>
-            <div class="row">
+            <div class="row" name="programming">
                 <div class="col-sm-2 form-group">
                     <input type="checkbox" class="custom-control-input" id="javascript">
                    <label class="custom-control-label" for="javascript">Javascript</label>
@@ -242,12 +244,12 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.cs
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label for="email"> Signature (type your name):</label>
-                    <input type="text" class="form-control" id="signature" name="info"
+                    <input type="text" class="form-control" id="signature" name="signature"
                     maxlength="50">
                 </div>
                 <div class="col-sm-6 form-group">
                     <label for="email">  Date:</label>
-                    <input type="tel" class="form-control" id="date" name="phone"   maxlength="50">
+                    <input type="tel" class="form-control" id="date" name="date"   maxlength="50">
                 </div>
             </div>
                <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="registration_submitted" value="submit" /></p>
