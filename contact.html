@@ -15,6 +15,25 @@
    $().ready(function(){
         load_footer();
    });
+    
+   $(document).ready(function() {
+    var table = $('#example').DataTable({
+        columnDefs: [{
+            orderable: false,
+            targets: [1,2,3]
+        }]
+    });
+ 
+    $('button').click( function() {
+        var data = table.$('input, select').serialize();
+        alert(
+            "The following data would have been submitted to the server: \n\n"+
+            data.substr( 0, 120 )+'...'
+        );
+        return false;
+    } );
+} );
+    
   </script>
 </head>
 
@@ -198,7 +217,7 @@ Preferred day and time to be contacted</label>
             <h2>Section 4 Technical or Scientific Qualifications</h2>
             <p> 
                Please give details of any programming or technical training you have taken outside of your college/university degree: </p>
-       <table id="example" class="display" style="width:100%" name="skills">
+       <table id="example2" class="display" style="width:100%" name="skills">
         <thead>
             <tr>
                 <th>Quantitative/Technical</th>
